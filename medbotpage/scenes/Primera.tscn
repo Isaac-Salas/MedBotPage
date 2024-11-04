@@ -1,0 +1,170 @@
+[gd_scene load_steps=3 format=3 uid="uid://70elw0xfp7il"]
+
+[ext_resource type="Theme" uid="uid://bxah0tyro0t5n" path="res://themes/Primera.tres" id="1_q43om"]
+[ext_resource type="Script" path="res://scenes/primera.gd" id="1_suyx5"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_suyx5")
+autolog = true
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.72549, 0.933333, 0.862745, 1)
+
+[node name="Register" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -270.0
+offset_top = 4.0
+offset_right = 290.0
+offset_bottom = 106.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_q43om")
+theme_override_colors/font_hover_color = Color(0.336, 0.379733, 0.4, 1)
+theme_override_colors/font_focus_color = Color(0.509804, 0.576471, 0.607843, 1)
+theme_override_colors/font_color = Color(0.509804, 0.576471, 0.607843, 1)
+theme_override_colors/font_outline_color = Color(0.588235, 0.745098, 0.694118, 1)
+theme_override_constants/outline_size = 50
+theme_override_font_sizes/font_size = 71
+text = "Register"
+flat = true
+
+[node name="Login" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -174.0
+offset_top = 140.0
+offset_right = 174.0
+offset_bottom = 242.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_q43om")
+theme_override_colors/font_hover_color = Color(0.336, 0.379733, 0.4, 1)
+theme_override_colors/font_focus_color = Color(0.509804, 0.576471, 0.607843, 1)
+theme_override_colors/font_color = Color(0.509804, 0.576471, 0.607843, 1)
+theme_override_colors/font_outline_color = Color(0.588235, 0.745098, 0.694118, 1)
+theme_override_constants/outline_size = 50
+theme_override_constants/align_to_largest_stylebox = 0
+theme_override_font_sizes/font_size = 71
+text = "Login
+"
+flat = true
+
+[node name="Test" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 326.0
+offset_top = 228.0
+offset_right = 477.0
+offset_bottom = 277.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_q43om")
+theme_override_colors/font_hover_color = Color(0.336, 0.379733, 0.4, 1)
+theme_override_colors/font_focus_color = Color(0.509804, 0.576471, 0.607843, 1)
+theme_override_colors/font_color = Color(0.509804, 0.576471, 0.607843, 1)
+theme_override_colors/font_outline_color = Color(0.588235, 0.745098, 0.694118, 1)
+theme_override_constants/outline_size = 50
+theme_override_constants/align_to_largest_stylebox = 0
+theme_override_font_sizes/font_size = 30
+text = "Test"
+flat = true
+
+[node name="Next" type="Button" parent="."]
+visible = false
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 323.0
+offset_top = 140.0
+offset_right = 474.0
+offset_bottom = 189.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_q43om")
+theme_override_colors/font_hover_color = Color(0.336, 0.379733, 0.4, 1)
+theme_override_colors/font_focus_color = Color(0.509804, 0.576471, 0.607843, 1)
+theme_override_colors/font_color = Color(0.509804, 0.576471, 0.607843, 1)
+theme_override_colors/font_outline_color = Color(0.588235, 0.745098, 0.694118, 1)
+theme_override_constants/outline_size = 50
+theme_override_constants/align_to_largest_stylebox = 0
+theme_override_font_sizes/font_size = 30
+disabled = true
+text = "NEXT"
+flat = true
+
+[node name="Contra" type="TextEdit" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -135.0
+offset_top = -80.0
+offset_right = 170.0
+offset_bottom = -37.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_q43om")
+placeholder_text = "Password"
+
+[node name="Correo" type="TextEdit" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -136.0
+offset_top = -139.0
+offset_right = 169.0
+offset_bottom = -96.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_q43om")
+placeholder_text = "E-mail
+"
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+layout_mode = 0
+offset_left = 380.0
+offset_top = 48.0
+offset_right = 775.0
+offset_bottom = 163.0
+theme = ExtResource("1_q43om")
+theme_override_colors/default_color = Color(0.509804, 0.576471, 0.607843, 1)
+bbcode_enabled = true
+text = "[center][/center]"
+
+[connection signal="pressed" from="Register" to="." method="_on_register_pressed"]
+[connection signal="pressed" from="Login" to="." method="_on_login_pressed"]
+[connection signal="pressed" from="Test" to="." method="_on_test_pressed"]
+[connection signal="pressed" from="Next" to="." method="_on_next_pressed"]

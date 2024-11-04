@@ -1,0 +1,8 @@
+[gd_resource type="Theme" load_steps=2 format=3 uid="uid://bxah0tyro0t5n"]
+
+[ext_resource type="FontFile" uid="uid://bns7q0bqyydbv" path="res://assets/fonts/Daydream.ttf" id="1_3jwea"]
+
+[resource]
+default_base_scale = 0.28
+default_font = ExtResource("1_3jwea")
+default_font_size = 12
