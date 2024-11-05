@@ -1,0 +1,27 @@
+[gd_scene format=3 uid="uid://csaipg8rw0b6b"]
+
+[node name="WebView" type="WebView"]
+full_window_size = false
+url = "https://www.youtube.com/watch?v=oIGMhDWes8c"
+devtools = false
+focused = false
+process_mode = 3
+process_physics_priority = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = 768.0
+offset_bottom = 432.0
+grow_horizontal = 2
+grow_vertical = 2
+pivot_offset = Vector2(576, 324)
+size_flags_horizontal = 4
+
+[node name="Button" type="Button" parent="."]
+z_index = 1000
+layout_mode = 0
+offset_left = 99.0
+offset_top = 115.0
+offset_right = 107.0
+offset_bottom = 123.0
+scale = Vector2(26, 10.48)

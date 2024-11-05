@@ -34,10 +34,10 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -123.0
-offset_top = 211.0
-offset_right = 104.0
-offset_bottom = 260.0
+offset_left = -205.0
+offset_top = 245.0
+offset_right = 186.0
+offset_bottom = 294.0
 grow_horizontal = 2
 grow_vertical = 2
 theme = SubResource("Theme_c6fw4")
@@ -58,10 +58,10 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -19.0
-offset_top = 74.0
-offset_right = 372.0
-offset_bottom = 123.0
+offset_left = 31.0
+offset_top = 153.0
+offset_right = 422.0
+offset_bottom = 202.0
 grow_horizontal = 2
 grow_vertical = 2
 theme = SubResource("Theme_c6fw4")
@@ -83,21 +83,19 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -462.0
-offset_top = -162.0
-offset_right = -74.0
-offset_bottom = 137.0
+offset_left = -458.0
+offset_top = -130.0
+offset_right = -70.0
+offset_bottom = 169.0
 grow_horizontal = 2
 grow_vertical = 2
 theme = ExtResource("2_qg7iu")
-placeholder_text = "- Nombre 
-- Descripcion
-- Sintomas
-- Dosis recomendada
-- Efectos_secundarios
-- restricciones 
-- creado en (Fecha/Hora)
-- actualizado_en (Fecha/hora)"
+placeholder_text = "
+
+
+
+
+Selecciona una opcion de la izquierda"
 wrap_mode = 1
 
 [node name="RichTextLabel" type="RichTextLabel" parent="."]
@@ -118,10 +116,10 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -49.0
-offset_top = -66.0
-offset_right = 413.0
-offset_bottom = 42.0
+offset_left = 1.0
+offset_top = 30.0
+offset_right = 463.0
+offset_bottom = 138.0
 grow_horizontal = 2
 grow_vertical = 2
 theme = ExtResource("2_qg7iu")
@@ -131,6 +129,15 @@ item_0/text = "Interacciones"
 item_1/text = "Medicamento"
 item_2/text = "Notificaciones"
 item_3/text = "Receta"
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 655.0
+offset_top = 134.0
+offset_right = 923.0
+offset_bottom = 215.0
+theme = ExtResource("2_qg7iu")
+theme_override_colors/font_color = Color(0.992157, 0.662745, 0.662745, 1)
 
 [connection signal="pressed" from="Send" to="." method="_on_send_pressed"]
 [connection signal="pressed" from="Clear" to="." method="_on_clear_pressed"]

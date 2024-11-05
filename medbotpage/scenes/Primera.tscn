@@ -1,7 +1,11 @@
-[gd_scene load_steps=3 format=3 uid="uid://70elw0xfp7il"]
+[gd_scene load_steps=5 format=3 uid="uid://70elw0xfp7il"]
 
 [ext_resource type="Theme" uid="uid://bxah0tyro0t5n" path="res://themes/Primera.tres" id="1_q43om"]
 [ext_resource type="Script" path="res://scenes/primera.gd" id="1_suyx5"]
+[ext_resource type="Texture2D" uid="uid://daj5aannds5j0" path="res://assets/images/33777.png" id="3_pf2uj"]
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_lhxif"]
+light_mode = 1
 
 [node name="Control" type="Control"]
 layout_mode = 3
@@ -163,6 +167,32 @@ theme = ExtResource("1_q43om")
 theme_override_colors/default_color = Color(0.509804, 0.576471, 0.607843, 1)
 bbcode_enabled = true
 text = "[center][/center]"
+
+[node name="ColorRect2" type="ColorRect" parent="."]
+layout_mode = 0
+offset_right = 1152.0
+offset_bottom = 135.0
+color = Color(0.992157, 0.662745, 0.662745, 1)
+
+[node name="Control" type="Control" parent="ColorRect2"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Sprite2D" type="Sprite2D" parent="ColorRect2/Control"]
+material = SubResource("CanvasItemMaterial_lhxif")
+position = Vector2(23, 19.5)
+scale = Vector2(0.25, 0.25)
+texture = ExtResource("3_pf2uj")
 
 [connection signal="pressed" from="Register" to="." method="_on_register_pressed"]
 [connection signal="pressed" from="Login" to="." method="_on_login_pressed"]
